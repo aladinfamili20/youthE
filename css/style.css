@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e0dedea8;
+    
+   }
+   a {
+    text-decoration: none;
+   }
+   li {
+    list-style: none;
+   }
+
+   /* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    /* position: fixed; */
+    width: 100%;
+    background-color: #00b61200;
+    color: #fff;
+   }
+
+   .donate {
+       background-color: #200303a8;
+       padding: 7px;
+       border-radius: 3px;
+   }
+
+   .nav-links a {
+    color: rgb(0, 0, 0);
+   }
+   /* LOGO */
+   .logo img {
+       width: 60px;
+       height: 50px;
+       }
+   /* NAVBAR MENU */
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+   }
+   .menu li:hover {
+    background-color: #00b613;
+    border-radius: 5px;
+    animation-duration: 0.5s;
+    transition: all 0.5s ease-in-out;
+    transition: 0.3s ease;
+   }
+   .menu li {
+    padding: 5px 14px;
+   }
+   /* DROPDOWN MENU */
+   .services {
+    position: relative; 
+   }
+   .dropdown {
+    background-color: #00b613;
+    padding: 1em 0;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+   }
+   .dropdown li + li {
+    margin-top: 10px;
+   }
+   .dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+   }
+   .dropdown li:hover {
+    background-color: #4c9e9e;
+   }
+   .services:hover .dropdown {
+    display: block;
+   }
+   
+
+   /*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+    display: none;
+   } 
+   /*HAMBURGER MENU*/
+   .hamburger {
+    display: none;
+     font-size: 24px;
+     color: rgb(0, 0, 0);
+    user-select: none;
+   }
+   /* APPLYING MEDIA QUERIES */
+   @media (max-width: 768px) {
+   .menu { 
+    display:none;
+    position: absolute;
+    background-color:#0083ff;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+   }
+   .menu li:hover {
+    display: inline-block;
+    background-color:#4c9e9e;
+    transition: 0.3s ease;
+   }
+   .menu li + li {
+    margin-top: 12px;
+   }
+   input[type=checkbox]:checked ~ .menu{
+    display: block;
+   }
+   .hamburger {
+    display: block;
+   }
+   .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+   }
+   .dropdown li:hover {
+    background-color: #4c9e9e;
+   }
+   }
+
+    
+   
+     
+
+    /* NAVBAR STYLING ENDS */
+
+    /* HEADER STYLING STARTS */
+.navigation-container{
+    background-color: #3498DB;
+    padding: 10px;
+    border-radius: 3px;
+    display: flex;
+     justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.navigation-item a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation-item{
+    padding: 10px;
+    border-radius: 3px;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.navigation-item :hover{
+    background-color: #B03A2E;
+    border-radius: 5px;
+    padding: 10px;
+    color: #3498DB;
+    animation-duration: 0.5s;
+    transition: all 0.5s ease-in-out;
+    transition: 0.3s ease;
+}
+
+ 
+/* HEADER STYLING ENDS */
+    .section {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .homeBac {
+        background-image: url("/images/homebac.png");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 70vh;
+    }
+
+    .dailyword h1{
+        color: #000;
+        margin-top: 10px;
+        font-size: 40px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Blog Post */
+
+    .blog img{
+        width: 15%;
+        height: auto !important;
+        object-fit: cover;
+        image-orientation: portrait;
+    }
+    .blog {
+        display: flex;
+    }
+    .blogDetail {
+        margin-left: 10px;
+    }
+    .blogDetail p{
+        font-size: 18px;
+        color: #000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .blogDetail h2{
+        font-size: 20px;
+        color: #000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .services {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        margin-top: 40px;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .mission{
+        width: 450px;
+        min-height: 100px;
+        margin-top: 20px;
+        background-color: rgb(25, 159, 248);
+    }
+
+    .mission h1{
+        color: #000;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 20px;
+        align-items: center;
+        text-transform: uppercase;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .mission h3{
+        color: #fff;
+        text-align: center;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .event {
+        width: 450px;
+        min-height: 100px;
+        margin-top: 20px;
+        background-color: #922a2a;
+    }
+
+    .event h1{
+        color: #000;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 20px;
+        align-items: center;
+        text-transform: uppercase;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .event h3{
+        color: #fff;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .Involved{
+        width: 450px;
+        min-height: 100px;
+        margin-top: 20px;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .Involved h1{
+        color: #922a2a;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 20px;
+        align-items: center;
+        text-transform: uppercase;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .Involved h3{
+        color: #fff;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Services Hover */
+
+    .mission:hover {
+        transition: 0.3s ease;
+        transform: scale(1.1);
+        background-color: #B03A2E;
+    }
+
+     .event:hover {
+        transition: 0.3s ease;
+        transform: scale(1.1);
+        background-color: #3498DB;
+    }
+
+        .Involved:hover {
+            transition: 0.3s ease;
+            transform: scale(1.1);
+            color: #fff;
+            background-color: #002fff;
+        }
+
+    /* Services Hover Ends */
+     .scripture{
+         margin-top: 20px;
+     }   
+    
+    .scripture h2{
+    color: #000;
+    text-align: center;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 20px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .mission-detail {
+        display: flex;
+        margin: 0 auto;        
+        margin-top: 50px;
+       }
+     .mission-detail img{
+            width: 50%;
+            height: auto;
+            object-fit: cover;
+     }
+    .mission-detail h1{
+        color: #000;
+        font-size: 30px;
+        margin-left: 20px;
+        text-transform: uppercase;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .mission-detail p{
+        color: #000;
+        font-size: 18px;
+        font-weight: normal;
+        text-transform: lowercase;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .message h1{
+        color: #000;
+        font-size: 30px;
+        margin-top: 50px;
+        text-transform: uppercase;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .message h2{
+        color: #000;
+        font-size: 20px;
+        margin-top: 20px;
+        font-weight: normal;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
